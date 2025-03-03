@@ -341,7 +341,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -357,6 +359,18 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear-3-dimensi-menggunakan-eliminasi-gauss">Penyelesaian Sistem Persamaan Linear 3 Dimensi Menggunakan Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satu-solusi-unik">1. <strong>Satu Solusi (Unik)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tak-hingga-solusi">2. <strong>Tak Hingga Solusi</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tanpa-solusi">3. <strong>Tanpa Solusi</strong></a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -369,6 +383,76 @@
   <section class="tex2jax_ignore mathjax_ignore" id="sistem-persamaan-linier">
 <h1>Sistem Persamaan Linier<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h1>
 <p>Persamaan linear adalah dasar dalam aljabar dan digunakan dalam berbagai bidang seperti fisika, ekonomi, dan teknik. Memahaminya membantu dalam menyelesaikan banyak masalah kehidupan nyata, seperti perhitungan keuangan, kecepatan, dan optimasi.</p>
+<section id="tugas">
+<h2>Tugas<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h2>
+</section>
+<section id="penyelesaian-sistem-persamaan-linear-3-dimensi-menggunakan-eliminasi-gauss">
+<h2>Penyelesaian Sistem Persamaan Linear 3 Dimensi Menggunakan Eliminasi Gauss<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear-3-dimensi-menggunakan-eliminasi-gauss" title="Link to this heading">#</a></h2>
+<p>Metode eliminasi Gauss digunakan untuk menentukan penyelesaian sistem persamaan linear, baik yang memiliki satu solusi, tak hingga solusi, maupun tanpa solusi.</p>
+<hr class="docutils" />
+</section>
+<section id="satu-solusi-unik">
+<h2>1. <strong>Satu Solusi (Unik)</strong><a class="headerlink" href="#satu-solusi-unik" title="Link to this heading">#</a></h2>
+<p>Contoh sistem persamaan:</p>
+<p>x + y + z = 6</p>
+<p>2x + 3y + z = 14</p>
+<p>y + 2z = 8</p>
+<p><strong>Matriks Augmented:</strong></p>
+<p>1 &amp; 1 &amp; 1 &amp; | &amp; 6
+2 &amp; 3 &amp; 1 &amp; | &amp; 14
+0 &amp; 1 &amp; 2 &amp; | &amp; 8</p>
+<p>Langkah-langkah:</p>
+<ol class="arabic simple">
+<li><p>Tukar baris jika perlu.</p></li>
+<li><p>Eliminasi elemen di bawah elemen utama (pivot).</p></li>
+<li><p>Bentuk eselon baris.</p></li>
+<li><p>Substitusi mundur.</p></li>
+</ol>
+<p>Hasil akhirnya:</p>
+<p>x = 2, \quad y = 4, \quad z = 2</p>
+<p><strong>Kesimpulan:</strong> Sistem memiliki <strong>satu solusi unik</strong>.</p>
+<p>Link:
+<a class="reference external" href="https://www.geogebra.org/m/j7bz5sz9">https://www.geogebra.org/m/j7bz5sz9</a></p>
+<hr class="docutils" />
+</section>
+<section id="tak-hingga-solusi">
+<h2>2. <strong>Tak Hingga Solusi</strong><a class="headerlink" href="#tak-hingga-solusi" title="Link to this heading">#</a></h2>
+<p>Contoh sistem persamaan:</p>
+<p>x + y + z = 5</p>
+<p>2x + 2y + 2z = 10</p>
+<p>3x + 3y + 3z = 15</p>
+<p><strong>Matriks Augmented:</strong></p>
+<p>1 &amp; 1 &amp; 1 &amp; | &amp; 5
+2 &amp; 2 &amp; 2 &amp; | &amp; 10
+3 &amp; 3 &amp; 3 &amp; | &amp; 15</p>
+<p>Bentuk eselon baris:</p>
+<p>1 &amp; 1 &amp; 1 &amp; | &amp; 5
+0 &amp; 0 &amp; 0 &amp; | &amp; 0
+0 &amp; 0 &amp; 0 &amp; | &amp; 0</p>
+<p><strong>Kesimpulan:</strong> Sistem memiliki <strong>tak hingga banyak solusi</strong> karena ada baris nol yang menunjukkan persamaan redundan.</p>
+<p>Link:
+<a class="reference external" href="https://www.geogebra.org/m/dtxnmxwa">https://www.geogebra.org/m/dtxnmxwa</a></p>
+<hr class="docutils" />
+</section>
+<section id="tanpa-solusi">
+<h2>3. <strong>Tanpa Solusi</strong><a class="headerlink" href="#tanpa-solusi" title="Link to this heading">#</a></h2>
+<p>Contoh sistem persamaan:</p>
+<p>x + y + z = 3</p>
+<p>2x + 2y + 2z = 6</p>
+<p>x + y + z = 5</p>
+<p><strong>Matriks Augmented:</strong></p>
+<p>1 &amp; 1 &amp; 1 &amp; | &amp; 3
+2 &amp; 2 &amp; 2 &amp; | &amp; 6
+1 &amp; 1 &amp; 1 &amp; | &amp; 5</p>
+<p>Bentuk eselon baris:</p>
+<p>1 &amp; 1 &amp; 1 &amp; | &amp; 3
+0 &amp; 0 &amp; 0 &amp; | &amp; 0
+0 &amp; 0 &amp; 0 &amp; | &amp; 2</p>
+<p>Baris terakhir menunjukkan <strong>kontradiksi (0 = 2)</strong>.</p>
+<p><strong>Kesimpulan:</strong> Sistem <strong>tidak memiliki solusi (inkonsisten)</strong>.</p>
+<p>Link:
+<a class="reference external" href="https://www.geogebra.org/m/ut7hraa7">https://www.geogebra.org/m/ut7hraa7</a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -425,6 +509,26 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">Tugas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian-sistem-persamaan-linear-3-dimensi-menggunakan-eliminasi-gauss">Penyelesaian Sistem Persamaan Linear 3 Dimensi Menggunakan Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#satu-solusi-unik">1. <strong>Satu Solusi (Unik)</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tak-hingga-solusi">2. <strong>Tak Hingga Solusi</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tanpa-solusi">3. <strong>Tanpa Solusi</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
